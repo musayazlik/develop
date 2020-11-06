@@ -1,0 +1,500 @@
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+* {
+	color: black;
+}
+
+.form-control:focus {
+	-webkit-box-shadow: 0 0 0 .2rem #fef0044d;
+	box-shadow: 0 0 0 .2rem #fef0044d;
+	border-color: #ffda00;
+}
+
+
+
+/*Yukarı Çık Button Css Kodları Başlangıç*/
+#yukaricik {
+
+	bottom: 15px;
+	display: none;
+	position: fixed;
+	right: 20px;
+	z-index: 999;
+}
+
+#yukaricik i{
+	font-size: 70px;
+	color: #ff9d00;
+}
+
+/*Yukarı Çık Button Css Kodları Bitiş*/
+
+
+/*Loader Alanı Css Kodları Başlangıç*/
+
+.preload{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	background: #ff5d4d;
+	z-index: 9999999;
+	position: fixed;
+	margin: 0;
+	padding: 0;
+
+}
+
+.loader{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 200px;
+	height: 200px;
+	background: transparent;
+	border: 20px solid #444;
+	box-shadow: 0px 0px 20px rgba(0,0,0,1), inset 0px 0px 20px rgba(0,0,0,1);
+	border-radius: 50%;
+}
+
+.spin{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 217px;
+	height: 217px;
+	background: transparent;
+	border: 10px solid #444;
+	border-bottom-color: #3498db;
+	border-top-width: 1px;
+	border-left-width: 8px;
+	border-bottom-width: 10px;
+	border-right-width: 0px;
+	border-right-color: transparent;
+	border-radius: 50%;
+	transition: all .5s;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) rotate(0deg);
+
+	}
+	100% {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+
+/*Loader Alanı Css Kodları Bitiş*/
+
+/*HEADER VE ÜST MENÜ ALANI*/
+
+/*Menü Alanı*/
+
+#mainNav {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	-webkit-transition: padding-top .3s,padding-bottom .3s;
+	-moz-transition: padding-top .3s,padding-bottom .3s;
+	transition: padding-top .3s,padding-bottom .3s;
+	border: none;
+	background-color: transparent;
+}
+
+nav#mainNav div.container a.navbar-brand {
+	font-weight: 900;
+	font-size: 30px;
+
+}
+
+
+
+
+#mainNav.navbar-shrink {
+	padding-top: 0;
+	padding-bottom: 0;
+	background-color: #000c;
+}
+
+nav#mainNav div.container a.navbar-brand h1{
+	text-shadow: 0 2px 1px #0b0b0bcc;
+	color: white;
+	margin: 0;
+	font-weight: 900;
+	font-family: 'Oswald', sans-serif;
+
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+	padding: 1em 1em !important;
+	font-size: 17px;
+	font-weight: 700;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+	color: rgb(98,98,98);
+}
+
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+	color:#FFD800;
+	border-bottom: 5px solid #FFC000;
+}
+.navbar-dark .navbar-nav .nav-link {
+	color: white;
+	text-shadow: 0 1px 1px #000000e6;
+}
+
+
+/*Header Alanı*/
+
+header.masthead {
+	height: 750px;
+	text-align: center;
+	color: #fff;
+	background-image: url(../images/profil.jpg) ;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+header.masthead div.arkaplan {
+	background: linear-gradient(#fae62dcc -30%,rgba(253, 110, 106,0.8) 150%);
+	height: 750px;
+}
+
+header.masthead .intro-text {
+	padding-top: 250px;
+	padding-bottom: 200px;
+}
+
+header.masthead .intro-text .baslik {
+	font-size: 100px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 600;
+	color: white;
+	text-shadow: 0 2px 5px #000
+}
+
+header.masthead .intro-text .anametin {
+	font-size: 200px;
+	font-weight: 900;
+	margin-bottom: 50px;
+	font-family: 'Oswald', sans-serif;
+	color:#ffee1b;
+	text-shadow: 0 2px 5px #000;
+	line-height: 150px;
+	text-transform: uppercase;
+}
+
+/*HEADER VE ÜST MENÜ ALANI BİTİŞ*/
+
+/*Hakkımda Alanı Başlangıç*/
+
+
+section#hakkimda {
+
+	min-height: 600px;
+	-webkit-box-shadow: -2px 0px 30px 2px #464646;
+	box-shadow: -2px 0px 30px 2px #464646;
+
+}
+
+section#hakkimda div.arkaplanefek{
+	min-height: 600px;
+}
+
+section#hakkimda div.container {
+	padding: 100px 0px 100px 0px;
+}
+
+
+
+section#hakkimda div.arkaplanefek div.container  div.col-12 {
+
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 20px 1px #08080899;
+	box-shadow: 0 0 20px 1px #08080899;
+
+}
+
+
+
+section#hakkimda div.arkaplanefek div.container  div.col-12 h2.text-center {
+	font-weight: 700;
+	font-size: 40px;
+	color: white;
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+section#hakkimda div.arkaplanefek div.container  div.col-12 p {
+	text-align: center;
+	font-weight: 400;
+	font-size: 15px;
+	color: white;
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	padding: 20px 150px 30px 150px;
+
+}
+
+/*Hakkımda Alanı Bitiş*/
+
+
+/*Bildiklerim Alanı Başlangıç*/
+
+section#bildiklerim {
+
+}
+
+section#bildiklerim  div.arkaplan {
+
+	padding: 70px 0 70px 0;
+
+
+}
+
+section#bildiklerim div.arkaplan div.container div h2 {
+	font-weight: 700;
+	font-size: 40px;
+	font-family: 'Oswald', sans-serif;
+	display: inline-block;
+
+
+}
+
+
+section#bildiklerim div.arkaplan div.container label {
+	font-size: 20px;
+	font-weight: 800;
+	font-family: 'Oswald', sans-serif;
+	border-bottom: 4px solid #FFC600;
+	color: #000;
+}
+
+section#bildiklerim div.arkaplan div.container div.progress {
+	margin-top: 4px;
+	margin-bottom: 30px;
+
+}
+
+section#bildiklerim div.arkaplan div.container div.progress {
+
+	height: 30px;
+	font-size: 23px;
+	font-weight: 700;
+	font-family: 'Lobster', cursive;
+	background-color: #d6d6d6;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-box-shadow: 0px 4px 10px 0.1px #a8a8a8e6;
+	box-shadow: 0px 4px 10px 0.1px #a8a8a8e6;
+
+}
+
+/*Bildiklerim Alanı Bitiş*/
+
+/*Hizmetlerim Alanı Başlangıç*/
+
+section#hizmetlerim {
+
+	-webkit-box-shadow: -2px 0px 20px #6b6b6b;
+	box-shadow: -2px 0px 20px #6b6b6b;
+	min-height: 600px;
+}
+
+section#hizmetlerim div.arkaplan {
+	min-height: 600px;
+}
+
+section#hizmetlerim div.arkaplan div.container-fluid {
+	padding: 25px 0;
+}
+
+section#hizmetlerim div.arkaplan div.container-fluid div.row {
+	margin: 20px 0 56.5px 0;
+}
+
+section#hizmetlerim div.arkaplan div.container-fluid div.row div.col-12 h2 {
+	
+	display: inline-block;
+	font-size: 40px;
+	font-weight: 800;
+	font-family: 'Oswald', sans-serif;
+
+}
+
+section#hizmetlerim div.arkaplan div.container-fluid div.row div.col-12 div.card {
+	width: 360px;
+	border: none;
+	-webkit-box-shadow: 0 0 8px rgba(0,0,0,.3);
+	box-shadow: 0 0 8px rgba(0,0,0,.3);
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+}
+
+section#hizmetlerim div.arkaplan div.container-fluid div.row div.col-12 div.card:hover{
+	-webkit-box-shadow: 0 6px 10px 3px rgba(0,0,0,.4);
+	box-shadow: 0 6px 10px 3px rgba(0,0,0,.4);
+}
+
+section#hizmetlerim div.arkaplan div.container-fluid div.row div.col-12 div.card img.card-img-top {
+	-webkit-border-top-left-radius: 10px;
+	border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+section#hizmetlerim div.arkaplan div.container-fluid div.row div.col-12 div.hvr-grow-shadow {
+	display: block;
+
+}
+
+section#hizmetlerim div.arkaplan div.container-fluid div.row div.col-12 div.card div.card-body h5 {
+	color: rgba(0,0,0,.8);
+	font-weight: 700;
+	font-size: 25px;
+	font-family: 'Oswald', sans-serif;
+
+}
+
+section#hizmetlerim div.arkaplan div.container-fluid div.row div.col-12 div.card div.card-body a.btn {
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	color: white;
+	font-weight: 600;
+	font-family: 'Oswald', sans-serif;
+	text-shadow: 0 1px 2px rgba(0,0,0,.3)
+
+}
+
+
+/*Hizmetlerim Alanı Bitiş*/
+
+/*Yorumlar Alanı Başlangıç*/
+
+
+
+
+
+/*Yorumlar Alanı Bitiş*/
+
+
+/*İnstagram Alanı Başlangıç*/
+
+section#instagram div.container-fluid div.row div.col-md-2 div.item a.popup div.overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	-webkit-transition: all ease-in-out 0.4s;
+	transition: all ease-in-out 0.4s;
+}
+
+section#instagram div.container-fluid div.row div.col-md-2 div.item a.popup div.overlay:hover {
+	opacity: 1;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+
+section#instagram div.container-fluid div.row div.col-md-2 div.item a.popup div.overlay div.info {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	display: none
+}
+
+section#instagram div.container-fluid div.row div.col-md-2 div.item a.popup div.overlay:hover div.info{
+	display: block;
+	transition: all 0.4s ease;
+}
+
+
+/*İnstagram Alanı Bitiş/
+
+/*İletişim Alanı Başlangıç*/
+
+section#iletisim {
+	background: url(../images/iletişim-arkaplan.jpeg) center center;
+	min-height: 600px;
+}
+
+section#iletisim div.arkaplan {
+	background-color: rgba(0,0,0,.88);
+	min-height: 600px;
+}
+
+
+section#iletisim div.arkaplan div.container {
+	padding-top: 50px;
+
+}
+
+section#iletisim div.arkaplan div.container form div.row.justify-content-end div label {
+	color: white;
+	font-size: 17px;
+	font-weight: 600;
+	font-family: 'Oswald', sans-serif;
+	border-bottom: 4px solid #FFDE00;
+	padding-bottom: 4px;
+}
+
+
+/*İletişim Alanı Bitiş*/
+
+
+/*Footer Alanı Başlangıç*/
+
+footer#footer {
+	background-color: #FFDE00;
+	color: white;
+	font-weight: 700;
+	font-size: 18px;
+	min-height: 60px;
+
+}
+
+footer#footer div.arkaplan {
+	background-color: #47474733;
+	min-height: 60px;
+}
+
+footer#footer div.container div.row div.align-self-center p {
+
+	text-shadow: 0 1px 1px #000;
+	font-size: 1.4vw;
+	text-align: center;
+
+}
+
+footer#footer div.arkaplan div.container div.row div.align-self-center div.social a img {
+
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+/*Footer Alanı Bitiş*/
