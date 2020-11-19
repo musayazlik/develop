@@ -2,6 +2,7 @@
 		Develop -- Bilgisayar Programcılığı Bitirme Projesi -- Yapımcı : <a style="color: #FF264F;" href="https://musayazlik.site" target="_blank"><b>Musa Yazlık</b></a>
 	</div>
 </div>
+
 </div>
 <script src="vendors/scripts/script.js"></script>
 <script src="src/plugins/highcharts-6.0.7/code/highcharts.js"></script>

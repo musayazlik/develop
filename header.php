@@ -15,6 +15,7 @@
 	<meta name="owner" content="Musa Yazlık"/>
 	<!-- Sitenin kuruluş tarihini söyler  -->
 	<meta name="copyright" content="(c) 2018"/>
+	
 	<title>DEVELOP</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/jquery-ui.css">
